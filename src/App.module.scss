@@ -1,0 +1,38 @@
+.contentWrapper {
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 453px;
+    column-gap: 120px;
+    position: relative;
+}
+
+
+.contentSigned::before {
+    content: '';
+    height: 100vh;
+    width: 420px;
+    background: linear-gradient(-45deg, #ffcd1e, #ff008e, #23a6d5, #23d5ab);
+    animation: gradient 5s ease infinite;
+    background-size: 400% 400%;
+    position: absolute;
+    right: -200px;
+    top: 0; 
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%; 
+    }
+    50% {
+        background-position: 100% 50%; 
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
